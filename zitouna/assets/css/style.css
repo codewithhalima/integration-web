@@ -1,0 +1,153 @@
+
+.navbar-nav .nav-link {
+    color: #333333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #7c9904;
+    font-weight: bold;
+}
+
+/* Hide checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Burger button */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 27px;
+    height: 3px;
+    background-color: #52652e;
+    border-radius: 3px;
+}
+
+/* Responsive menu under 992px */
+@media (max-width: 991.98px) {
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .nav-menu .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-toggle:checked ~ .nav-menu {
+        display: block;
+    }
+
+    .site-header .navbar .container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Footer */
+.site-footer {
+    background-color: #1e2d21 !important;
+    color: #f5f0df;
+    font-family: Arial, sans-serif;
+}
+
+/* Titres */
+.site-footer h3,
+.site-footer h5 {
+    color: #d6b76a !important;
+}
+
+/* Paragraphes */
+.site-footer p,
+.site-footer li {
+    color: #e1e1d5;
+}
+
+/* Hover */
+.site-footer a:hover {
+    color: #d6b76a !important;
+}
+
+
+/* HERO */
+
+
+.hero {
+    height: 100svh;
+    min-height: 560px;
+
+    background-image:url("./hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+/* ANIMATION */
+
+.hero-title {
+    animation: apparition 0.8s ease-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ACCESSIBILITE */
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-title {
+        animation: none;
+    }
+}
+
+/* Bandeau chiffres clés */
+.stats-section {
+    background: linear-gradient(135deg, #7b990494, #586e02bb);
+    color: #ffffff;
+}
+
+.stat-box {
+    background-color: rgba(250, 242, 226, 0.212);
+    border: 1px solid rgba(255, 240, 202, 0.5);
+    transition: 0.3s;
+}
+
+.stat-box:hover {
+    background-color: rgba(46, 40, 24, 0.18);
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 35px;
+    color: #061d00;
+}
+
+.stat-box h2 {
+    color: #ffffff;
+    font-size: 35px;
+}
