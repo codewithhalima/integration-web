@@ -127,12 +127,12 @@
 
 /* Bandeau chiffres clés */
 .stats-section {
-    background: linear-gradient(135deg, #7b990494, #586e02bb);
+    background: linear-gradient(135deg, #2f360f, #4c5e05bb);
     color: #ffffff;
 }
 
 .stat-box {
-    background-color: rgba(250, 242, 226, 0.212);
+    background-color:  #7c9904;
     border: 1px solid rgba(255, 240, 202, 0.5);
     transition: 0.3s;
 }
@@ -144,10 +144,274 @@
 
 .stat-icon {
     font-size: 35px;
-    color: #061d00;
+    color: #ffffff;
 }
 
 .stat-box h2 {
     color: #ffffff;
     font-size: 35px;
+}
+/*engagement*/
+.engagements {
+    background-color: #f8f6ed;
+}
+
+.engagements h2 {
+    color: #7c9904;
+}
+
+.engagement-card {
+    border: 1px solid #d6b76a;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.engagement-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.engagement-icon {
+    font-size: 45px;
+    color: #7c9904;
+}
+
+.engagement-card h3 {
+    color: #7c9904;
+}
+
+.engagement-card p {
+    color: #555;
+}
+
+/*carousel*/
+
+
+/* CAROUSEL */
+ /* Conteneur du carrousel défilable horizontalement sans JS */
+  .carousel-css {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Aimante chaque carte proprement */
+    scroll-behavior: smooth;
+    padding-bottom: 1rem;
+  }
+
+  /* Style discret de la barre de défilement */
+  .carousel-css::-webkit-scrollbar {
+    height: 8px;
+  }
+  .carousel-css::-webkit-scrollbar-thumb {
+    background-color: #7c9904;
+    border-radius: 4px;
+  }
+  .carousel-css::-webkit-scrollbar-track {
+    background-color: #e9ecef;
+    border-radius: 4px;
+  }
+
+  /* Contour visible quand on navigue au clavier (Tab) */
+  .carousel-css:focus {
+    outline: 2px solid #7c9904;
+    outline-offset: 6px;
+    border-radius: 8px;
+  }
+
+  /* Chaque carte produit (3 visibles sur PC pour faire défiler la 4e) */
+  .carousel-css-item {
+    flex: 0 0 calc(33.333% - 1rem);
+    scroll-snap-align: start;
+  }
+
+  /* 2 cartes visibles sur tablette */
+  @media (max-width: 991.98px) {
+    .carousel-css-item {
+      flex: 0 0 calc(50% - 0.75rem);
+    }
+  }
+
+  /* 1 carte visible sur mobile */
+  @media (max-width: 575.98px) {
+    .carousel-css-item {
+      flex: 0 0 85%;
+    }
+  }
+/* La récolte en images*/
+.recolte-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+
+    grid-template-areas:
+        "big big second third"
+        "big big fourth fifth";
+
+    gap: 15px;
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item1 { grid-area: big; }
+.item2 { grid-area: second; }
+.item3 { grid-area: third; }
+.item4 { grid-area: fourth; }
+.item5 { grid-area: fifth; }
+
+.item figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(transparent, rgba(0,0,0,.8));
+}
+
+@media (max-width: 768px) {
+    .recolte-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 180px);
+        grid-template-areas:
+            "big big"
+            "second third"
+            "fourth fifth";
+    }
+}
+
+@media (max-width: 480px) {
+    .recolte-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 220px);
+        grid-template-areas:
+            "big"
+            "second"
+            "third"
+            "fourth"
+            "fifth";
+    }
+}
+/*temoign*/
+
+.quote::before {
+    content: "“";
+    font-size: 40px;
+    color: #7c9904;
+}
+/* action final*/
+
+.cta {
+    background: radial-gradient(circle, #7c9904, #344526);
+}
+/*histoire*/
+
+.histoire {
+    column-count: 2;
+}
+
+.histoire p:first-child::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    color: #7c9904;
+}
+
+.histoire p:first-child::first-line {
+    font-variant: small-caps;
+}
+
+@media (max-width: 767px) {
+    .histoire {
+        column-count: 1;
+    }
+}
+/*frise*/
+
+.timeline {
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: #7c9904;
+}
+
+.timeline li {
+    width: 50%;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.timeline li:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline li:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-content {
+    background: #d4d1c9e1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.timeline time {
+    color: #7c9904;
+    font-weight: bold;
+}
+
+@media (max-width: 767px) {
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline li {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding-left: 35px;
+    }
+}
+/*founder*/
+.fondateur::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*graphiqye*/
+
+.bar {
+    width: 35px;
+    background: #899b48;
+    border-radius: 5px 5px 0 0;
+}
+/*logo*/
+
+
+.logo-label svg {
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.logo-label:hover svg {
+    filter: grayscale(0%);
+    cursor: pointer;
 }
