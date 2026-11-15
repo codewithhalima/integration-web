@@ -415,3 +415,42 @@
     filter: grayscale(0%);
     cursor: pointer;
 }
+/**/
+#nos-huiles .btn {
+    padding: 10px 22px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+#nos-huiles .btn-success {
+    background-color: #526b35;
+    border-color: #526b35;
+}
+
+#nos-huiles .btn-outline-success {
+    color: #526b35;
+    border-color: #526b35;
+}
+
+#nos-huiles .btn-outline-success:hover {
+    background-color: #526b35;
+    color: white;
+}
+
+#nos-huiles .card {
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+#nos-huiles .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important;
+}
+
+#nos-huiles .card img {
+    transition: 0.4s;
+}
+
+#nos-huiles .card:hover img {
+    transform: scale(1.05);
+}
