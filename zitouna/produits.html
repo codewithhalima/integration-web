@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
 </head>
 <body>
     
@@ -169,157 +170,706 @@
     </div>
 
 </section>
-<!--produits-->
-<section class="container py-5">
+
+<!--  NOTRE COLLECTION -->
+
+<section class="container py-5" id="produits">
 
     <div class="text-center mb-5">
         <h2 class="fw-bold">Notre Collection</h2>
         <p class="text-muted">Découvrez nos huiles d'olive</p>
     </div>
 
+    <!-- GALERIE DES PRODUITS -->
+
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
 
-        <!-- 1 -->
+        <!-- 1 : CHETOUI -->
+
         <div class="col">
             <div class="card h-100 shadow-sm">
+
                 <picture>
-                    <source srcset="./assets/images/prod3.webp" type="./aasets/images/webp">
-                    <img src="./assets/images/prod3.jpeg" class="card-img-top img-fluid" alt="Huile Chetoui">
+                    <source srcset="./assets/images/prod3.webp" type="images/webp">
+                    <img src="./assets/images/prod3.jpeg"
+                         class="card-img-top img-fluid"
+                         alt="Huile Chetoui">
                 </picture>
+
                 <div class="card-body text-center">
-                    <h5>Vierge Extra Chetoui</h5>
-                    <p>Contenance : 750 ml</p>
+                    <h5 class="fw-bold">Vierge Extra Chetoui</h5>
+                    <p>Contenance : 1L</p>
                 </div>
+
                 <div class="card-footer bg-white text-center">
-                    <button class="btn btn-success">Ajouter au devis</button>
+
+                    <button class="btn btn-success btn-devis mb-2">
+                        Ajouter au devis
+                    </button>
+
+                    <button class="btn btn-outline-success w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ficheModal1">
+                        Voir la fiche technique
+                    </button>
+
                 </div>
             </div>
         </div>
 
-        <!-- 2 -->
+
+        <!-- 2 : CHEMLALI -->
+
         <div class="col">
             <div class="card h-100 shadow-sm">
+
                 <picture>
-                    <source srcset="./assets/images/prod4.webp" type="./assets/images/webp">
-                    <img src="./assets/images/prod4.jpeg" class="card-img-top img-fluid" alt="Huile Chemlali">
+                    <source srcset="./assets/images/prod4.webp" type="images/webp">
+                    <img src="./assets/images/prod4.jpeg"
+                         class="card-img-top img-fluid"
+                         alt="Huile Chemlali">
                 </picture>
+
                 <div class="card-body text-center">
-                    <h5>Vierge Extra Chemlali</h5>
+                    <h5 class="fw-bold">Vierge Extra Chemlali</h5>
                     <p>Contenance : 1 L</p>
                 </div>
+
                 <div class="card-footer bg-white text-center">
-                    <button class="btn btn-success">Ajouter au devis</button>
+
+                    <button class="btn btn-success btn-devis mb-2">
+                        Ajouter au devis
+                    </button>
+
+                    <button class="btn btn-outline-success w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ficheModal2">
+                        Voir la fiche technique
+                    </button>
+
                 </div>
             </div>
         </div>
 
-        <!-- 3 -->
+
+        <!-- 3 : BIO PREMIERE RECOLTE -->
+
         <div class="col">
             <div class="card h-100 shadow-sm">
+
                 <picture>
-                    <source srcset="./assets/images/prod2.webp" type="./aasets/images/webp">
-                    <img src="./assets/images/prod2.jpeg" class="card-img-top img-fluid" alt="Huile Bio">
+                    <source srcset="./assets/images/prod2.webp" type="images/webp">
+                    <img src="./assets/images/prod2.jpeg"
+                         class="card-img-top img-fluid"
+                         alt="Huile Bio">
                 </picture>
+
                 <div class="card-body text-center">
-                    <h5>Bio Première Récolte</h5>
+                    <h5 class="fw-bold">Bio Première Récolte</h5>
+                    <p>Contenance : 1L</p>
+                    <span class="badge bg-success">Bio</span>
+                </div>
+
+                <div class="card-footer bg-white text-center">
+
+                    <button class="btn btn-success btn-devis mb-2">
+                        Ajouter au devis
+                    </button>
+
+                    <button class="btn btn-outline-success w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ficheModal3">
+                        Voir la fiche technique
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 4 : ROMARIN -->
+
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+
+                <picture>
+                    <source srcset="./assets/images/prod1.webp" type="images/webp">
+                    <img src="./assets/images/prod1.jpeg"
+                         class="card-img-top img-fluid"
+                         alt="Huile Romarin">
+                </picture>
+
+                <div class="card-body text-center">
+                    <h5 class="fw-bold">Infusée au Romarin</h5>
+                    <p>Contenance : 1L</p>
+                </div>
+
+                <div class="card-footer bg-white text-center">
+
+                    <button class="btn btn-success btn-devis mb-2">
+                        Ajouter au devis
+                    </button>
+
+                    <button class="btn btn-outline-success w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ficheModal4">
+                        Voir la fiche technique
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 5 : CHETOUI PREMIUM -->
+
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+
+                <picture>
+                    <source srcset="./assets/images/prodd11.webp" type="images/webp">
+                    <img src="./assets/images/prodd11.png"
+                         class="card-img-top img-fluid"
+                         alt="Chetoui Premium">
+                </picture>
+
+                <div class="card-body text-center">
+                    <h5 class="fw-bold">Chetoui Premium</h5>
+                    <p>Contenance : 500 ml</p>
+                </div>
+
+                <div class="card-footer bg-white text-center">
+
+                    <button class="btn btn-success btn-devis mb-2">
+                        Ajouter au devis
+                    </button>
+
+                    <button class="btn btn-outline-success w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ficheModal5">
+                        Voir la fiche technique
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 6 : CHEMLALI PREMIUM -->
+
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+
+                <picture>
+                    <source srcset="./assets/images/prod22.webp" type="images/webp">
+                    <img src="./assets/images/prod22.png"
+                         class="card-img-top img-fluid"
+                         alt="Chemlali Premium">
+                </picture>
+
+                <div class="card-body text-center">
+                    <h5 class="fw-bold">Chemlali Premium</h5>
+                    <p>Contenance : 500 ml</p>
+                </div>
+
+                <div class="card-footer bg-white text-center">
+
+                    <button class="btn btn-success btn-devis mb-2">
+                        Ajouter au devis
+                    </button>
+
+                    <button class="btn btn-outline-success w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ficheModal6">
+                        Voir la fiche technique
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 7 : BIO PREMIUM -->
+
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+
+                <picture>
+                    <source srcset="./assets/images/prod33.webp" type="images/webp">
+                    <img src="./assets/images/prod33.png"
+                         class="card-img-top img-fluid"
+                         alt="Bio Premium">
+                </picture>
+
+                <div class="card-body text-center">
+                    <h5 class="fw-bold">Bio Premium</h5>
                     <p>Contenance : 500 ml</p>
                     <span class="badge bg-success">Bio</span>
                 </div>
+
                 <div class="card-footer bg-white text-center">
-                    <button class="btn btn-success">Ajouter au devis</button>
+
+                    <button class="btn btn-success btn-devis mb-2">
+                        Ajouter au devis
+                    </button>
+
+                    <button class="btn btn-outline-success w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ficheModal7">
+                        Voir la fiche technique
+                    </button>
+
                 </div>
             </div>
         </div>
 
-        <!-- 4 -->
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <picture>
-                    <source srcset="./assets/images/prod1.webp" type="./aasets/images/webp">
-                    <img src="./assets/images/prod1.jpeg" class="card-img-top img-fluid" alt="Huile Romarin">
-                </picture>
-                <div class="card-body text-center">
-                    <h5>Infusée au Romarin</h5>
-                    <p>Contenance : 250 ml</p>
-                </div>
-                <div class="card-footer bg-white text-center">
-                    <button class="btn btn-success">Ajouter au devis</button>
-                </div>
-            </div>
-        </div>
 
-        <!-- 5 -->
+        <!-- 8 : THYM -->
+
         <div class="col">
             <div class="card h-100 shadow-sm">
+
                 <picture>
-                    <source srcset="./assets/images/prod2.webp" type="./aasets/images/webp">
-                    <img src="images/chetoui-premium.jpg" class="card-img-top img-fluid" alt="Chetoui Premium">
+                    <source srcset="./assets/images/prod44.webp" type="images/webp">
+                    <img src="./assets/images/prod44.png"
+                         class="card-img-top img-fluid"
+                         alt="Huile Thym">
                 </picture>
+
                 <div class="card-body text-center">
-                    <h5>Chetoui Premium</h5>
+                    <h5 class="fw-bold">Infusée au Thym</h5>
                     <p>Contenance : 500 ml</p>
                 </div>
-                <div class="card-footer bg-white text-center">
-                    <button class="btn btn-success">Ajouter au devis</button>
-                </div>
-            </div>
-        </div>
 
-        <!-- 6 -->
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <picture>
-                    <source srcset="./assets/images/prod2.webp" type="./aasets/images/webp">
-                    <img src="images/chemlali-premium.jpg" class="card-img-top img-fluid" alt="Chemlali Premium">
-                </picture>
-                <div class="card-body text-center">
-                    <h5>Chemlali Premium</h5>
-                    <p>Contenance : 750 ml</p>
-                </div>
                 <div class="card-footer bg-white text-center">
-                    <button class="btn btn-success">Ajouter au devis</button>
-                </div>
-            </div>
-        </div>
 
-        <!-- 7 -->
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <picture>
-                    <source srcset="./assets/images/prod2.webp" type="./aasets/images/webp">
-                    <img src="images/bio-premium.jpg" class="card-img-top img-fluid" alt="Bio Premium">
-                </picture>
-                <div class="card-body text-center">
-                    <h5>Bio Premium</h5>
-                    <p>Contenance : 1 L</p>
-                    <span class="badge bg-success">Bio</span>
-                </div>
-                <div class="card-footer bg-white text-center">
-                    <button class="btn btn-success">Ajouter au devis</button>
-                </div>
-            </div>
-        </div>
+                    <button class="btn btn-success btn-devis mb-2">
+                        Ajouter au devis
+                    </button>
 
-        <!-- 8 -->
-        <div class="col">
-            <div class="card h-100 shadow-sm">
-                <picture>
-                    <source srcset="./assets/images/prod2.webp" type="./aasets/images/webp">
-                    <img src="images/thym.jpg" class="card-img-top img-fluid" alt="Huile Thym">
-                </picture>
-                <div class="card-body text-center">
-                    <h5>Infusée au Thym</h5>
-                    <p>Contenance : 250 ml</p>
-                </div>
-                <div class="card-footer bg-white text-center">
-                    <button class="btn btn-success">Ajouter au devis</button>
+                    <button class="btn btn-outline-success w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ficheModal8">
+                        Voir la fiche technique
+                    </button>
+
                 </div>
             </div>
         </div>
 
     </div>
 </section>
+
+
+<!-- ================= MODAL 1 : CHETOUI ================= -->
+
+<div class="modal fade" id="ficheModal1" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header text-white"
+                 style="background-color:#7c9904;">
+
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-file-earmark-text"></i>
+                    Fiche Technique
+                </h5>
+
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+
+                <div class="text-center mb-4">
+                    <i class="bi bi-droplet-fill text-success"
+                       style="font-size:40px;"></i>
+
+                    <h4 class="fw-bold mt-2" style="color:#7c9904;">
+                        Vierge Extra Chetoui
+                    </h4>
+
+                    <p class="text-muted">Zitouna - Qualité et authenticité</p>
+                </div>
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr><th>Nom du produit</th><td>Vierge Extra Chetoui</td></tr>
+                        <tr><th>Type d'huile</th><td>Huile d'olive vierge extra</td></tr>
+                        <tr><th>Variété</th><td>Chetoui</td></tr>
+                        <tr><th>Contenance</th><td>500ml</td></tr>
+                        <tr><th>Catégorie</th><td>Fruité vert</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-light border text-center">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    Découvrez la qualité de nos huiles d'olive.
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success"
+                        data-bs-dismiss="modal">Fermer</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= MODAL 2 : CHEMLALI ================= -->
+
+<div class="modal fade" id="ficheModal2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header text-white" style="background-color:#7c9904;">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-file-earmark-text"></i> Fiche Technique
+                </h5>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                <div class="text-center mb-4">
+                    <i class="bi bi-droplet-fill text-success" style="font-size:40px;"></i>
+                    <h4 class="fw-bold mt-2" style="color:#7c9904;">Vierge Extra Chemlali</h4>
+                    <p class="text-muted">Zitouna - Qualité et authenticité</p>
+                </div>
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr><th>Nom du produit</th><td>Vierge Extra Chemlali</td></tr>
+                        <tr><th>Type d'huile</th><td>Huile d'olive vierge extra</td></tr>
+                        <tr><th>Variété</th><td>Chemlali</td></tr>
+                        <tr><th>Contenance</th><td>1 L</td></tr>
+                        <tr><th>Catégorie</th><td>Fruité mûr</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-light border text-center">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    Découvrez la qualité de nos huiles d'olive.
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= MODAL 3 : BIO PREMIERE RECOLTE ================= -->
+
+<div class="modal fade" id="ficheModal3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header text-white" style="background-color:#7c9904;">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-file-earmark-text"></i> Fiche Technique
+                </h5>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                <div class="text-center mb-4">
+                    <i class="bi bi-droplet-fill text-success" style="font-size:40px;"></i>
+                    <h4 class="fw-bold mt-2" style="color:#7c9904;">Bio Première Récolte</h4>
+                    <p class="text-muted">Zitouna - Qualité et authenticité</p>
+                </div>
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr><th>Nom du produit</th><td>Bio Première Récolte</td></tr>
+                        <tr><th>Type d'huile</th><td>Huile d'olive vierge extra</td></tr>
+                        <tr><th>Variété</th><td>Biologique</td></tr>
+                        <tr><th>Contenance</th><td>1L</td></tr>
+                        <tr><th>Catégorie</th><td>Bio</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-light border text-center">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    Découvrez la qualité de nos huiles d'olive.
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= MODAL 4 : ROMARIN ================= -->
+
+<div class="modal fade" id="ficheModal4" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header text-white" style="background-color:#7c9904;">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-file-earmark-text"></i> Fiche Technique
+                </h5>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                <div class="text-center mb-4">
+                    <i class="bi bi-droplet-fill text-success" style="font-size:40px;"></i>
+                    <h4 class="fw-bold mt-2" style="color:#7c9904;">Infusée au Romarin</h4>
+                    <p class="text-muted">Zitouna - Qualité et authenticité</p>
+                </div>
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr><th>Nom du produit</th><td>Infusée au Romarin</td></tr>
+                        <tr><th>Type d'huile</th><td>Huile d'olive aromatisée</td></tr>
+                        <tr><th>Variété</th><td>Romarin</td></tr>
+                        <tr><th>Contenance</th><td>1L</td></tr>
+                        <tr><th>Catégorie</th><td>Aromatisée</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-light border text-center">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    Découvrez la qualité de nos huiles d'olive.
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= MODAL 5 : CHETOUI PREMIUM ================= -->
+
+<div class="modal fade" id="ficheModal5" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header text-white" style="background-color:#7c9904;">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-file-earmark-text"></i> Fiche Technique
+                </h5>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                <div class="text-center mb-4">
+                    <i class="bi bi-droplet-fill text-success" style="font-size:40px;"></i>
+                    <h4 class="fw-bold mt-2" style="color:#7c9904;">Chetoui Premium</h4>
+                    <p class="text-muted">Zitouna - Qualité et authenticité</p>
+                </div>
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr><th>Nom du produit</th><td>Chetoui Premium</td></tr>
+                        <tr><th>Type d'huile</th><td>Huile d'olive vierge extra</td></tr>
+                        <tr><th>Variété</th><td>Chetoui</td></tr>
+                        <tr><th>Contenance</th><td>1L</td></tr>
+                        <tr><th>Catégorie</th><td>Premium</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-light border text-center">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    Découvrez la qualité de nos huiles d'olive.
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= MODAL 6 : CHEMLALI PREMIUM ================= -->
+
+<div class="modal fade" id="ficheModal6" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header text-white" style="background-color:#7c9904;">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-file-earmark-text"></i> Fiche Technique
+                </h5>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                <div class="text-center mb-4">
+                    <i class="bi bi-droplet-fill text-success" style="font-size:40px;"></i>
+                    <h4 class="fw-bold mt-2" style="color:#7c9904;">Chemlali Premium</h4>
+                    <p class="text-muted">Zitouna - Qualité et authenticité</p>
+                </div>
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr><th>Nom du produit</th><td>Chemlali Premium</td></tr>
+                        <tr><th>Type d'huile</th><td>Huile d'olive vierge extra</td></tr>
+                        <tr><th>Variété</th><td>Chemlali</td></tr>
+                        <tr><th>Contenance</th><td>500 ml</td></tr>
+                        <tr><th>Catégorie</th><td>Premium</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-light border text-center">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    Découvrez la qualité de nos huiles d'olive.
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= MODAL 7 : BIO PREMIUM ================= -->
+
+<div class="modal fade" id="ficheModal7" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header text-white" style="background-color:#7c9904;">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-file-earmark-text"></i> Fiche Technique
+                </h5>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                <div class="text-center mb-4">
+                    <i class="bi bi-droplet-fill text-success" style="font-size:40px;"></i>
+                    <h4 class="fw-bold mt-2" style="color:#7c9904;">Bio Premium</h4>
+                    <p class="text-muted">Zitouna - Qualité et authenticité</p>
+                </div>
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr><th>Nom du produit</th><td>Bio Premium</td></tr>
+                        <tr><th>Type d'huile</th><td>Huile d'olive vierge extra</td></tr>
+                        <tr><th>Variété</th><td>Biologique</td></tr>
+                        <tr><th>Contenance</th><td>500ml</td></tr>
+                        <tr><th>Catégorie</th><td>Bio</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-light border text-center">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    Découvrez la qualité de nos huiles d'olive.
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= MODAL 8 : THYM ================= -->
+
+<div class="modal fade" id="ficheModal8" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header text-white" style="background-color:#7c9904;">
+                <h5 class="modal-title fw-bold">
+                    <i class="bi bi-file-earmark-text"></i> Fiche Technique
+                </h5>
+                <button type="button" class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-4">
+                <div class="text-center mb-4">
+                    <i class="bi bi-droplet-fill text-success" style="font-size:40px;"></i>
+                    <h4 class="fw-bold mt-2" style="color:#7c9904;">Infusée au Thym</h4>
+                    <p class="text-muted">Zitouna - Qualité et authenticité</p>
+                </div>
+
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr><th>Nom du produit</th><td>Infusée au Thym</td></tr>
+                        <tr><th>Type d'huile</th><td>Huile d'olive aromatisée</td></tr>
+                        <tr><th>Variété</th><td>Thym</td></tr>
+                        <tr><th>Contenance</th><td>500ml</td></tr>
+                        <tr><th>Catégorie</th><td>Aromatisée</td></tr>
+                    </tbody>
+                </table>
+
+                <div class="alert alert-light border text-center">
+                    <i class="bi bi-check-circle-fill text-success"></i>
+                    Découvrez la qualité de nos huiles d'olive.
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fermer</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= TOAST AJOUT AU DEVIS ================= -->
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+    <div id="devisToast"
+         class="toast text-bg-success"
+         role="alert">
+
+        <div class="toast-body d-flex justify-content-between">
+
+            <span>
+                <i class="bi bi-check-circle-fill"></i>
+                Produit ajouté au devis !
+            </span>
+
+            <button type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="toast">
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
 <style>
+
 .card {
     border: none;
     border-radius: 15px;
@@ -338,18 +888,309 @@
     object-fit: cover;
 }
 
-.card .btn {
-    background-color: #526b35;
+.card .btn-success {
+    background-color: #7c9904;
     border: none;
     border-radius: 25px;
 }
 
-.card .btn:hover {
-    background-color: #354a25;
+.card .btn-success:hover {
+    background-color: #7c9904;
 }
+
+.card .btn-outline-success {
+    border-color: #7c9904;
+    color: #7c9904;
+    border-radius: 25px;
+}
+
+.card .btn-outline-success:hover {
+    background-color: #7c9904;
+    color: white;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-body th {
+    color: #7c9904;
+    width: 40%;
+}
+
 </style>
 
+<!-- ================= TABLEAU COMPARATIF ================= -->
 
+<section class="container py-5" id="comparatif">
+
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Tableau Comparatif</h2>
+        <p class="text-muted">
+            Comparez les caractéristiques de nos huiles d'olive
+        </p>
+    </div>
+
+    <div class="table-responsive shadow-sm rounded-4">
+
+        <table class="table table-bordered table-hover text-center align-middle mb-0">
+
+            <caption class="caption-top text-center fw-bold text-success fs-5">
+                Comparaison des caractéristiques de nos produits Zitouna
+            </caption>
+
+            <!-- THEAD -->
+
+            <thead>
+
+                <tr>
+                    <th rowspan="2" scope="col">Catégorie</th>
+                    <th rowspan="2" scope="col">Produit</th>
+                    <th colspan="3" scope="colgroup">
+                        Caractéristiques chimiques
+                    </th>
+                </tr>
+
+                <tr>
+                    <th scope="col">Acidité (%)</th>
+                    <th scope="col">Indice de peroxyde</th>
+                    <th scope="col">Polyphénols (mg/kg)</th>
+                </tr>
+
+            </thead>
+
+            <!-- TBODY -->
+
+            <tbody>
+
+                <!-- FRUITE VERT -->
+
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Fruité vert</th>
+                    <th scope="row">Vierge Extra Chetoui</th>
+                    <td>0,3 %</td>
+                    <td>8 meq O₂/kg</td>
+                    <td>450 mg/kg</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Chetoui Premium</th>
+                    <td>0,4 %</td>
+                    <td>9 meq O₂/kg</td>
+                    <td>420 mg/kg</td>
+                </tr>
+
+                <!-- FRUITE MUR -->
+
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Fruité mûr</th>
+                    <th scope="row">Vierge Extra Chemlali</th>
+                    <td>0,4 %</td>
+                    <td>9 meq O₂/kg</td>
+                    <td>250 mg/kg</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Chemlali Premium</th>
+                    <td>0,5 %</td>
+                    <td>10 meq O₂/kg</td>
+                    <td>230 mg/kg</td>
+                </tr>
+
+                <!-- BIO -->
+
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Bio</th>
+                    <th scope="row">
+                        Bio Première Récolte
+                        <span class="badge bg-success">Bio</span>
+                    </th>
+                    <td>0,3 %</td>
+                    <td>7 meq O₂/kg</td>
+                    <td>380 mg/kg</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">
+                        Bio Premium
+                        <span class="badge bg-success">Bio</span>
+                    </th>
+                    <td>0,2 %</td>
+                    <td>6 meq O₂/kg</td>
+                    <td>400 mg/kg</td>
+                </tr>
+
+                <!-- AROMATISEES -->
+
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Aromatisées</th>
+                    <th scope="row">Infusée au Romarin</th>
+                    <td>0,4 %</td>
+                    <td>9 meq O₂/kg</td>
+                    <td>280 mg/kg</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Infusée au Thym</th>
+                    <td>0,4 %</td>
+                    <td>8 meq O₂/kg</td>
+                    <td>290 mg/kg</td>
+                </tr>
+
+            </tbody>
+
+            <!-- TFOOT -->
+
+            <tfoot class="table-light">
+
+                <tr>
+                    <td colspan="5" class="text-start p-3">
+
+                        <strong class="text-success">
+                            <i class="bi bi-info-circle-fill"></i>
+                            Légende des normes :
+                        </strong>
+
+                        <ul class="mb-0 mt-2">
+
+                            <li>
+                                Acidité de l'huile d'olive vierge extra :
+                                ≤ 0,8 %.
+                            </li>
+
+                            <li>
+                                Indice de peroxyde :
+                                ≤ 20 meq O₂/kg.
+                            </li>
+
+                            <li>
+                                Polyphénols :
+                                valeurs indicatives exprimées en mg/kg.
+                            </li>
+
+                        </ul>
+
+                        <small class="text-muted">
+                            Valeurs fictives utilisées à titre illustratif
+                            pour la présentation du projet.
+                        </small>
+
+                    </td>
+                </tr>
+
+            </tfoot>
+
+        </table>
+
+    </div>
+
+</section>
+
+<style>
+
+#comparatif table {
+    min-width: 750px;
+    border-color: #dce5d3;
+}
+
+#comparatif caption {
+    padding: 15px;
+}
+
+#comparatif thead th {
+    background-color: #7c9904;
+    color: white;
+    padding: 16px;
+    vertical-align: middle;
+}
+
+#comparatif tbody th {
+    background-color: #f4f7ef;
+    color: #7c9904;
+    padding: 15px;
+}
+
+#comparatif tbody td {
+    padding: 15px;
+}
+
+#comparatif tbody tr:hover {
+    background-color: #f5f8f1;
+}
+
+#comparatif tfoot {
+    background-color: #f5f7f1;
+}
+
+#comparatif tfoot td {
+    line-height: 1.8;
+}
+
+#comparatif .table-responsive {
+    border-radius: 12px;
+}
+
+</style>
+<!-- ================= PAGINATION ================= -->
+
+<nav aria-label="Pagination des produits" class="mt-5">
+
+    <ul class="pagination justify-content-center">
+
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">
+                Précédent
+            </a>
+        </li>
+
+        <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">
+                1
+            </a>
+        </li>
+
+        <li class="page-item">
+            <a class="page-link" href="#">
+                2
+            </a>
+        </li>
+
+        <li class="page-item">
+            <a class="page-link" href="#">
+                Suivant
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+<style>
+    .pagination .page-link {
+    color: #526b35;
+    border-color: #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #7c9904;
+    border-color: #526b35;
+    color: white;
+}
+
+.pagination .page-link:hover {
+    background-color: #e9f0e2;
+    color: #7c9904;
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #999;
+}
+</style>
 <!-- Footer -->
 <footer class="bg-dark text-light py-5">
   <div class="container">

@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
 </head>
 <body>
     
@@ -370,6 +371,495 @@
     width: 100%;
 }
 </style>
+
+<section class="container py-5" id="agenda">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Notre Agenda</h2>
+        <p class="text-muted">
+            Découvrez nos prochains événements autour de l'huile d'olive
+        </p>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Événement 1 -->
+        <div class="col-md-6 col-lg-4">
+            <article class="h-event card h-100 shadow-sm p-4">
+                <div class="card-body">
+                    <span class="badge bg-success mb-3">Dégustation</span>
+                    <h3 class="p-name">Journée de dégustation d'huile d'olive</h3>
+                    <p class="text-muted">
+                        <time class="dt-start" datetime="2026-12-05">
+                            05 Décembre 2026
+                        </time>
+                    </p>
+                    <p>
+                        <strong>Lieu :</strong>
+                        <span class="p-location">Moulin Zitouna, Sfax</span>
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Événement 2 -->
+        <div class="col-md-6 col-lg-4">
+            <article class="h-event card h-100 shadow-sm p-4">
+                <div class="card-body">
+                    <span class="badge bg-success mb-3">Formation</span>
+                    <h3 class="p-name">Atelier de fabrication d'huile d'olive</h3>
+                    <p class="text-muted">
+                        <time class="dt-start" datetime="2026-12-12">
+                            12 Décembre 2026
+                        </time>
+                    </p>
+                    <p>
+                        <strong>Lieu :</strong>
+                        <span class="p-location">Centre agricole, Sousse</span>
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Événement 3 -->
+        <div class="col-md-6 col-lg-4">
+            <article class="h-event card h-100 shadow-sm p-4">
+                <div class="card-body">
+                    <span class="badge bg-success mb-3">Exposition</span>
+                    <h3 class="p-name">Salon national de l'huile d'olive</h3>
+                    <p class="text-muted">
+                        <time class="dt-start" datetime="2026-12-20">
+                            20 Décembre 2026
+                        </time>
+                    </p>
+                    <p>
+                        <strong>Lieu :</strong>
+                        <span class="p-location">Parc des expositions, Tunis</span>
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Événement 4 -->
+        <div class="col-md-6 col-lg-4">
+            <article class="h-event card h-100 shadow-sm p-4">
+                <div class="card-body">
+                    <span class="badge bg-success mb-3">Agriculture</span>
+                    <h3 class="p-name">Rencontre avec les producteurs d'olives</h3>
+                    <p class="text-muted">
+                        <time class="dt-start" datetime="2027-01-10">
+                            10 Janvier 2027
+                        </time>
+                    </p>
+                    <p>
+                        <strong>Lieu :</strong>
+                        <span class="p-location">Domaine agricole, Kairouan</span>
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Événement 5 -->
+        <div class="col-md-6 col-lg-4">
+            <article class="h-event card h-100 shadow-sm p-4">
+                <div class="card-body">
+                    <span class="badge bg-success mb-3">Bio</span>
+                    <h3 class="p-name">Découverte de l'huile d'olive biologique</h3>
+                    <p class="text-muted">
+                        <time class="dt-start" datetime="2027-01-18">
+                            18 Janvier 2027
+                        </time>
+                    </p>
+                    <p>
+                        <strong>Lieu :</strong>
+                        <span class="p-location">Espace Zitouna, Monastir</span>
+                    </p>
+                </div>
+            </article>
+        </div>
+
+    </div>
+</section>
+<style>
+#agenda {
+    background-color: #f8f9f5;
+}
+
+#agenda .card {
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+#agenda .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+#agenda h3 {
+    color: #526b35;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#agenda .badge {
+    background-color: #7c9904 !important;
+    padding: 8px 12px;
+}
+
+#agenda time {
+    font-weight: 600;
+    color: #777;
+}
+</style>
+
+
+
+
+
+
+
+
+<section class="container py-5" id="faq">
+
+    <div class="text-center mb-5">
+        <h2 class="fw-bold">Questions fréquentes</h2>
+        <p class="text-muted">
+            Retrouvez les réponses à vos questions sur nos huiles d'olive
+        </p>
+    </div>
+
+    <div class="faq-container">
+
+        <details class="faq-item">
+            <summary>
+                Quels sont les bienfaits de l'huile d'olive ?
+                <span class="faq-chevron">⌄</span>
+            </summary>
+            <div class="faq-answer">
+                <p>
+                    L'huile d'olive est riche en acides gras mono-insaturés
+                    et en antioxydants. Elle s'intègre parfaitement dans
+                    une alimentation équilibrée.
+                </p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>
+                Quelle est la différence entre Fruité Vert et Fruité Mûr ?
+                <span class="faq-chevron">⌄</span>
+            </summary>
+            <div class="faq-answer">
+                <p>
+                    Le Fruité Vert possède des arômes végétaux comme
+                    l'herbe fraîche et l'amande verte. Le Fruité Mûr
+                    présente des saveurs plus douces et fruitées.
+                </p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>
+                Comment conserver l'huile d'olive ?
+                <span class="faq-chevron">⌄</span>
+            </summary>
+            <div class="faq-answer">
+                <p>
+                    Il est conseillé de conserver l'huile d'olive dans
+                    un endroit frais et sec, à l'abri de la lumière
+                    et de la chaleur, dans une bouteille bien fermée.
+                </p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>
+                Quelle est la durée de conservation ?
+                <span class="faq-chevron">⌄</span>
+            </summary>
+            <div class="faq-answer">
+                <p>
+                    La durée de conservation dépend de la date indiquée
+                    sur l'emballage. Pour préserver sa qualité, refermez
+                    toujours soigneusement la bouteille après utilisation.
+                </p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>
+                Proposez-vous des huiles d'olive biologiques ?
+                <span class="faq-chevron">⌄</span>
+            </summary>
+            <div class="faq-answer">
+                <p>
+                    Oui, notre collection comprend des huiles d'olive
+                    biologiques, élaborées à partir d'olives cultivées
+                    selon les méthodes de l'agriculture biologique.
+                </p>
+            </div>
+        </details>
+
+    </div>
+</section>
+<style>
+/* FAQ */
+#faq {
+    background-color: #f8f9f5;
+}
+
+#faq h2 {
+    color: #7c9904;
+    font-size: 35px;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-item {
+    background-color: white;
+    border: 1px solid #e5e8df;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding: 0 22px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Masquer le chevron par défaut */
+.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1c2008;
+}
+
+/* Masquer le triangle par défaut */
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Icône chevron */
+.faq-chevron {
+    font-size: 25px;
+    color: #526b35;
+    transition: transform 0.3s ease;
+}
+
+/* Rotation lorsque details est ouvert */
+.faq-item[open] .faq-chevron {
+    transform: rotate(180deg);
+}
+
+/* Réponse */
+.faq-answer {
+    border-top: 1px solid #e5e8df;
+    padding: 15px 0;
+    color: #666;
+    line-height: 1.8;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        /* SECTION LOCALISATION */
+        #localisation {
+            background-color: #f8f9f5;
+            padding: 70px 0;
+        }
+
+        #localisation h2 {
+            color: #7c9904;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        #localisation .subtitle {
+            color: #777;
+            font-size: 16px;
+        }
+
+        /* BLOC INFORMATIONS */
+        .map-info {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            height: 100%;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e5e8df;
+        }
+
+        .map-info h3 {
+            color: #7c9904;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .map-info p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .map-info strong {
+            color: #7c9904;
+        }
+
+        .map-info i {
+            color: #7c9904;
+            margin-right: 8px;
+        }
+
+        /* BOUTON */
+        .map-info .btn-map {
+            background-color: #7c9904;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .map-info .btn-map:hover {
+            background-color: #627a03;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* CARTE */
+        .map-container {
+            width: 100%;
+            height: 420px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+            border: 4px solid white;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            #localisation {
+                padding: 45px 0;
+            }
+
+            #localisation h2 {
+                font-size: 28px;
+            }
+
+            .map-container {
+                height: 300px;
+            }
+
+            .map-info {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section id="localisation">
+    <div class="container">
+
+        <!-- TITRE -->
+        <div class="text-center mb-5">
+            <h2>Où nous trouver ?</h2>
+            <p class="subtitle">
+                Retrouvez-nous au cœur de Nabeul, en Tunisie
+            </p>
+        </div>
+
+        <div class="row align-items-stretch g-4">
+
+            <!-- INFORMATIONS -->
+            <div class="col-lg-4">
+                <div class="map-info">
+
+                    <h3>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Maison Zitouna
+                    </h3>
+
+                    <hr>
+
+                    <p>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <strong>Adresse :</strong><br>
+                        Nabeul 8000, Tunisie
+                    </p>
+
+                    <p>
+                        <i class="bi bi-map-fill"></i>
+                        <strong>Région :</strong><br>
+                        Cap Bon, Tunisie
+                    </p>
+
+                    <p>
+                        <i class="bi bi-tree-fill"></i>
+                        <strong>Notre spécialité :</strong><br>
+                        Huile d'olive tunisienne de qualité
+                    </p>
+
+                    <a
+                        href="https://www.openstreetmap.org/?mlat=36.4513&mlon=10.7356#map=15/36.4513/10.7356"
+                        target="_blank"
+                        rel="noopener"
+                        class="btn-map">
+
+                        <i class="bi bi-signpost-2-fill text-white"></i>
+                        Voir l'itinéraire
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- CARTE OPENSTREETMAP -->
+            <div class="col-lg-8">
+                <div class="map-container">
+
+                    <iframe
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=10.70%2C36.42%2C10.77%2C36.48&layer=mapnik&marker=36.4513%2C10.7356"
+                        title="Carte de localisation à Nabeul"
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
 
 <!-- Footer -->
 <footer class="bg-dark text-light py-5">

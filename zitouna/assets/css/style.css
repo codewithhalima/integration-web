@@ -127,7 +127,7 @@
 
 /* Bandeau chiffres clés */
 .stats-section {
-    background: linear-gradient(135deg, #2f360f, #4c5e05bb);
+   
     color: #ffffff;
 }
 
@@ -423,17 +423,17 @@
 }
 
 #nos-huiles .btn-success {
-    background-color: #526b35;
-    border-color: #526b35;
+    background-color: #7c9904;
+    border-color: ##7c9904;
 }
 
 #nos-huiles .btn-outline-success {
-    color: #526b35;
-    border-color: #526b35;
+    color: #7c9904;
+    border-color: #7c9904;
 }
 
 #nos-huiles .btn-outline-success:hover {
-    background-color: #526b35;
+    background-color: #7c9904;
     color: white;
 }
 
