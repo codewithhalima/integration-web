@@ -1,6 +1,6 @@
-
+body{background-color: #FAF7EF ;}
 .navbar-nav .nav-link {
-    color: #333333;
+    color: #000000;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -27,7 +27,7 @@
 .burger span {
     width: 27px;
     height: 3px;
-    background-color: #52652e;
+    background-color: #292c24;
     border-radius: 3px;
 }
 
@@ -132,13 +132,13 @@
 }
 
 .stat-box {
-    background-color:  #7c9904;
-    border: 1px solid rgba(255, 240, 202, 0.5);
+    background-color:  #7b9904c4;
+    border: 1px solid rgba(0, 0, 0, 0.623);
     transition: 0.3s;
 }
 
 .stat-box:hover {
-    background-color: rgba(46, 40, 24, 0.18);
+    background-color: rgba(46, 40, 24, 0.829);
     transform: translateY(-5px);
 }
 
@@ -157,7 +157,7 @@
 }
 
 .engagements h2 {
-    color: #7c9904;
+    color: #000000;
 }
 
 .engagement-card {
@@ -181,7 +181,7 @@
 }
 
 .engagement-card p {
-    color: #555;
+    color: #000000;
 }
 
 /*carousel*/
@@ -203,7 +203,7 @@
     height: 8px;
   }
   .carousel-css::-webkit-scrollbar-thumb {
-    background-color: #7c9904;
+    background-color: #7b990441;
     border-radius: 4px;
   }
   .carousel-css::-webkit-scrollbar-track {
@@ -213,7 +213,7 @@
 
   /* Contour visible quand on navigue au clavier (Tab) */
   .carousel-css:focus {
-    outline: 2px solid #7c9904;
+    outline: 2px solid #7b990448;
     outline-offset: 6px;
     border-radius: 8px;
   }
@@ -307,13 +307,14 @@
 .quote::before {
     content: "“";
     font-size: 40px;
-    color: #7c9904;
+    color: #000000af;
 }
 /* action final*/
 
 .cta {
-    background: radial-gradient(circle, #7c9904, #344526);
+    background: radial-gradient(circle, #313b0596, #93c46f);
 }
+
 /*histoire*/
 
 .histoire {
@@ -349,7 +350,7 @@
     left: 50%;
     width: 3px;
     height: 100%;
-    background: #7c9904;
+    background-color:(123, 153, 4, 0.432)9904;
 }
 
 .timeline li {
@@ -368,7 +369,7 @@
 }
 
 .timeline-content {
-    background: #d4d1c9e1;
+    background-color: #d4d1c9e1;
     padding: 20px;
     border-radius: 10px;
 }
@@ -399,8 +400,8 @@
 /*graphiqye*/
 
 .bar {
-    width: 35px;
-    background: #899b48;
+    width: 50px;
+    background: #7c9904;
     border-radius: 5px 5px 0 0;
 }
 /*logo*/
@@ -424,12 +425,12 @@
 
 #nos-huiles .btn-success {
     background-color: #7c9904;
-    border-color: ##7c9904;
+    border-color: #313d02;
 }
 
 #nos-huiles .btn-outline-success {
     color: #7c9904;
-    border-color: #7c9904;
+    border-color: #313d02;
 }
 
 #nos-huiles .btn-outline-success:hover {
