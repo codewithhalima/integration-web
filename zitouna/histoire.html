@@ -91,63 +91,153 @@
         </p>
     </div>
 </section>
-<!--frise -->
+<!---Frise chronologique (1987 → 2026, 6 dates)-->
 
-<section class="container py-5">
-    <h2 class="text-center mb-5">Notre histoire</h2>
+<style>
+  /* Conteneur principal de la frise */
+  .frise {
+    position: relative;
+    list-style: none;
+    padding: 1rem 0;
+    margin: 0;
+  }
 
-    <ol class="timeline" >
+  /* Ligne verticale centrale en ::before */
+  .frise::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background-color: #7c9904;
+    transform: translateX(-50%);
+  }
 
-        <li>
-            <div class="timeline-content">
-                <time datetime="1987">1987</time>
-                <h5>Nos débuts</h5>
-                <p>Début de notre aventure dans le monde de l'huile d'olive.</p>
-            </div>
-        </li>
+  /* Chaque étape de la frise */
+  .frise li {
+    position: relative;
+    width: 50%;
+    padding: 0.75rem 2rem;
+  }
 
-        <li>
-            <div class="timeline-content">
-                <time datetime="1995">1995</time>
-                <h5>Développement</h5>
-                <p>Extension de nos activités agricoles.</p>
-            </div>
-        </li>
+  /* Point vert sur la ligne centrale pour chaque date */
+  .frise li::after {
+    content: "";
+    position: absolute;
+    top: 1.5rem;
+    width: 14px;
+    height: 14px;
+    background-color: #7c9904;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #7c9904;
+  }
 
-        <li>
-            <div class="timeline-content">
-                <time datetime="2005">2005</time>
-                <h5>Modernisation</h5>
-                <p>Adoption de nouvelles techniques de production.</p>
-            </div>
-        </li>
+  /* Éléments impairs à gauche */
+  .frise li:nth-child(odd) {
+    left: 0;
+    text-align: right;
+  }
+  .frise li:nth-child(odd)::after {
+    right: -7px;
+  }
 
-        <li>
-            <div class="timeline-content">
-                <time datetime="2012">2012</time>
-                <h5>Expansion</h5>
-                <p>Développement de notre réseau de distribution.</p>
-            </div>
-        </li>
+  /* Éléments pairs à droite */
+  .frise li:nth-child(even) {
+    left: 50%;
+    text-align: left;
+  }
+  .frise li:nth-child(even)::after {
+    left: -7px;
+  }
 
-        <li>
-            <div class="timeline-content">
-                <time datetime="2020">2020</time>
-                <h5>Internationalisation</h5>
-                <p>Ouverture vers de nouveaux marchés internationaux.</p>
-            </div>
-        </li>
+  /* Adaptation mobile : toute la frise alignée à gauche */
+  @media (max-width: 767.98px) {
+    .frise::before {
+      left: 12px;
+    }
+    .frise li {
+      width: 100%;
+      left: 0 !important;
+      text-align: left !important;
+      padding-left: 2.5rem;
+      padding-right: 0;
+    }
+    .frise li::after {
+      left: 5px !important;
+      right: auto !important;
+    }
+  }
+</style>
 
-        <li>
-            <div class="timeline-content">
-                <time datetime="2026">2026</time>
-                <h5>Avenir</h5>
-                <p>Une nouvelle étape pour notre entreprise.</p>
-            </div>
-        </li>
+<section class="py-5 bg-light">
+  <div class="container">
+    
+    <h2 class="text-center fw-bold mb-5">Notre parcours (1987 – 2026)</h2>
+
+    <!-- Liste ordonnée stylisée en frise chronologique -->
+    <ol class="frise">
+
+      <!-- Date 1 (Gauche) -->
+      <li>
+        <div class="card border-0 shadow-sm p-3">
+          <time datetime="1987" class="badge bg-dark mb-2 align-self-md-end">1987</time>
+          <h3 class="h5 fw-bold">Création du premier verger</h3>
+          <p class="text-muted small mb-0">Plantation des premiers oliviers familiaux sur les collines de Nabeul.</p>
+        </div>
+      </li>
+
+      <!-- Date 2 (Droite) -->
+      <li>
+        <div class="card border-0 shadow-sm p-3">
+          <time datetime="1996" class="badge bg-dark mb-2 align-self-start">1996</time>
+          <h3 class="h5 fw-bold">Construction du moulin</h3>
+          <p class="text-muted small mb-0">Mise en service de notre propre moulin pour garantir une extraction immédiate après récolte.</p>
+        </div>
+      </li>
+
+      <!-- Date 3 (Gauche) -->
+      <li>
+        <div class="card border-0 shadow-sm p-3">
+          <time datetime="2005" class="badge bg-dark mb-2 align-self-md-end">2005</time>
+          <h3 class="h5 fw-bold">Regroupement des producteurs</h3>
+          <p class="text-muted small mb-0">Naissance de la coopérative réunissant les premiers producteurs locaux partenaires.</p>
+        </div>
+      </li>
+
+      <!-- Date 4 (Droite) -->
+      <li>
+        <div class="card border-0 shadow-sm p-3">
+          <time datetime="2014" class="badge bg-dark mb-2 align-self-start">2014</time>
+          <h3 class="h5 fw-bold">Certification Agriculture Biologique</h3>
+          <p class="text-muted small mb-0">Conversion de nos parcelles à l'agriculture biologique et lancement de la cuvée Bio.</p>
+        </div>
+      </li>
+
+      <!-- Date 5 (Gauche) -->
+      <li>
+        <div class="card border-0 shadow-sm p-3">
+          <time datetime="2020" class="badge bg-dark mb-2 align-self-md-end">2020</time>
+          <h3 class="h5 fw-bold">Ouverture à l'export international</h3>
+          <p class="text-muted small mb-0">Nos huiles d'olive vierges extra sont désormais distribuées dans 12 pays.</p>
+        </div>
+      </li>
+
+      <!-- Date 6 (Droite) -->
+      <li>
+        <div class="card border-0 shadow-sm p-3">
+          <time datetime="2026" class="badge bg-dark mb-2 align-self-start">2026</time>
+          <h3 class="h5 fw-bold">42 producteurs et 180 tonnes/an</h3>
+          <p class="text-muted small mb-0">Modernisation de la ligne d'extraction à froid tout en préservant notre savoir-faire artisanal.</p>
+        </div>
+      </li>
 
     </ol>
+
+  </div>
 </section>
+
 <!--imagefounder-->
 
 <section class="container py-5">
@@ -418,7 +508,7 @@
 <button onclick="window.print()"
   class="btn rounded-circle btn rounded-circle position-fixed bottom-0 start-0 m-3"
   style="background-color: #7c9904; color: white; border: none;" >
-    <i class="bi bi-printer me-0.5"></i>
+    <i class="bi bi-printer me-0.5"></i></button>
 <!-- Bouton Retour en haut -->
  <a href="#top" class="btn rounded-circle btn rounded-circle position-fixed bottom-0 end-0 m-3"
   style="background-color: #7c9904; color: white; border: none;">↑</a>  

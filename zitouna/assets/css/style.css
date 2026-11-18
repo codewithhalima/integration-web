@@ -336,61 +336,7 @@ body{background-color: #FAF7EF ;}
         column-count: 1;
     }
 }
-/*frise*/
 
-.timeline {
-    list-style: none;
-    position: relative;
-    padding: 0;
-}
-
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 3px;
-    height: 100%;
-    background-color:(123, 153, 4, 0.432)9904;
-}
-
-.timeline li {
-    width: 50%;
-    padding: 15px 30px;
-    position: relative;
-}
-
-.timeline li:nth-child(odd) {
-    left: 0;
-    text-align: right;
-}
-
-.timeline li:nth-child(even) {
-    left: 50%;
-}
-
-.timeline-content {
-    background-color: #d4d1c9e1;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.timeline time {
-    color: #7c9904;
-    font-weight: bold;
-}
-
-@media (max-width: 767px) {
-    .timeline::before {
-        left: 10px;
-    }
-
-    .timeline li {
-        width: 100%;
-        left: 0;
-        text-align: left;
-        padding-left: 35px;
-    }
-}
 /*founder*/
 .fondateur::after {
     content: "";
